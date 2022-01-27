@@ -1,431 +1,524 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="css/jquery.fancybox.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      type="text/javascript"
-      src="https://vk.com/js/api/openapi.js?168"
-    ></script>
-    <script type="text/javascript">
-      VK?.init({ apiId: 8063016, onlyWidgets: true });
-    </script>
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
+
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a href="#" class="logo">
-            <img class="logo__link" src="images/logo.svg" alt="logo" />
-          </a>
-          <a class="phone" href="tel:88001112233">+8 (099) 999 90 90</a>
-          <button class="menu__btn"></button>
-        </div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">О НАС</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">АВТОПАРК</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">УСЛОВИЯ</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">КОНТАКТЫ</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="top">
-      <div class="container">
-        <div class="top__heading">
-          <div class="top__content">
-            <h1 class="top__title">
-              Мы поможем с любым заданием от простого к сложному
-            </h1>
-            <p class="top__text">
-              Я всегда в вашем смартфоне, заказывайте где удобно и когда удобно
-              - просто прислав файлы в whatsapp!
-            </p>
-            <a href="" class="application-btn">Перейти в Whatsapp</a>
-          </div>
-          <div class="top__slider">
-            <div class="top__slider-item">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">About</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Gallery</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="logo" href="">
+              <img src="images/logo.png" alt="logo" />
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Blog</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__btn-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <button class="header__btn">
               <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
+                class="header__btn-image"
+                src="images/icon_menu.svg"
+                alt="icon menu  "
               />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="top__bottom">
-          <div class="top__items">
-            <div class="top__item">
-              <img class="top__item-img" src="images/icon-1.svg" alt="" />
-              <p class="top__item-text">
-                Более 300 автомобилей в вашем распоряжении
-              </p>
-            </div>
-            <div class="top__item">
-              <img class="top__item-img" src="images/icon-2.svg" alt="" />
-              <p class="top__item-text">
-                Дешевле такси и собственного автомобиля
-              </p>
-            </div>
-            <div class="top__item">
-              <img class="top__item-img" src="images/icon-3.svg" alt="" />
-              <p class="top__item-text">
-                Лучшие автомобили в любой точке города
-              </p>
-            </div>
-          </div>
-          <div class="top__links">
-            <a class="top__link" href="">Условия аренды автомобиля</a>
-            <a class="top__link" href="">Публичный договор</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="rent">
-      <div class="container">
-        <div class="rent__inner">
-          <div class="rent__content">
-            <h3 class="rent__title">Условия аренды автомобиля</h3>
-            <p class="rent__text">
-              Мы ценим каждого клиента и предоставляем качественный сервис
-              каршеринга в Киеве.
-            </p>
-            <p class="rent__text">
-              Именно для того, что бы Вам было приятно и безопасно пользоваться
-              нашим сервисом на постоянной основе, мы выделили несколько условий
-              для того, чтобы взять машину в аренду
-            </p>
-            <a href="" class="application-btn">Скачать приложение</a>
-          </div>
-          <div class="rent__item">
-            <div class="rent__item-num">01</div>
-            <p class="rent__item-title">
-              Опыт вождения <br />
-              от 2х лет
-            </p>
-            <p class="rent__item-text">
-              Для того, чтобы арендовать автомобиль, Вам необходимо
-              зарегестрировать свои прав в нашем мобильном приложении
-            </p>
-          </div>
-          <div class="rent__item">
-            <div class="rent__item-num">02</div>
-            <p class="rent__item-title">Только по Киеву</p>
-            <p class="rent__item-text">
-              Наши автомобили работают только в пределах города Киев. За город
-              на наших автомобилях, к сожалению, выезжать нельзя.
-            </p>
-          </div>
-          <div class="rent__item">
-            <div class="rent__item-num">03</div>
-            <p class="rent__item-title">Мобильный телефон и интернет</p>
-            <p class="rent__item-text">
-              Для использования нашего сервиса Вам необходим мобильный телефон и
-              интернет. Бронирование, оплата и вся отчетность происходит онлайн
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+            </button>
+            <div class="rightside-menu rightside-menu--close">
+              <button class="rightside-menu__close">
+                <img src="images/close.svg" alt="" />
+              </button>
 
-    <section class="benefits">
-      <div class="container">
-        <h3 class="benefits__title">Преимущества</h3>
-        <div class="benefits__items">
-          <ul class="benefits__list">
-            <li class="benefits__list-item">мойка авто каждую неделю</li>
-            <li class="benefits__list-item">премиум автомобили</li>
-            <li class="benefits__list-item">мощный двигатель</li>
-            <li class="benefits__list-item">поддержка 24/7</li>
-            <li class="benefits__list-item">бензин за наш счет</li>
-            <li class="benefits__list-item">парковка по всему городу</li>
-            <li class="benefits__list-item">каждый месяц ТО автомобиля</li>
-          </ul>
-          <img class="benefits__images" src="images/benefits.png" alt="" />
-          <div class="benefits__content">
-            <p class="benefits__text">
-              Вы можете выбрать один из 300 наших автомобилей, насладиться
-              сервисом, повысить уровень жизни, не покупая дорогой автомобиль,
-              успевать везде и каждый день ездить на новом премиум автомобиле.
-            </p>
-            <p class="benefits__text">
-              Посмотрите видео презентацию нашего сервиса и выберите автомобиль
-              уже сейчас!
-            </p>
-            <a
-              class="video-popup"
-              data-fancybox
-              href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-            >
-              ПОСМОТРЕТЬ <br />
-              ПРЕЗЕНТАЦИЮ</a
-            >
+              <div class="rightside-menu__content">
+                <a class="rightside-menu__logo" href="#"
+                  ><img
+                    class="rightside-menu__logo-image"
+                    src="images/logo-big.png"
+                    alt="logo big"
+                /></a>
+                <h4 class="rightside-menu__title">Furniture for life</h4>
+                <p class="rightside-menu__text">
+                  Sustainable hot chicken skateboard, dreamcatcher meggings
+                  actually squid. Slow-carb everyday carry +1 art party
+                  microdosing, put a bird on it brooklyn
+                </p>
+                <img
+                  class="rightside-menu__images"
+                  src="images/content/rightside-image.jpg"
+                  alt="images"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </header>
+      <main class="main">
+        <section class="top">
+          <div class="top__inner">
+            <div class="top__slider">
+              <div class="top__slider-item">
+                <img
+                  class="top__slider-img"
+                  src="images/content/slider-img-1.png"
+                  alt="images"
+                />
+                <div class="top__slider-info">
+                  <h2 class="top__slider-title">Furniture collection</h2>
+                  <p class="top__slider-text">
+                    Deep v you probably haven't heard of them banh mi synth
+                    actually affogato. Aesthetic lyft ethical drinking vinegar
+                    austint
+                  </p>
+                </div>
+              </div>
+              <div class="top__slider-item">
+                <img
+                  class="top__slider-img"
+                  src="images/content/slider-img-1.png"
+                  alt="images"
+                />
+                <div class="top__slider-info">
+                  <h2 class="top__slider-title">Furniture collection</h2>
+                  <p class="top__slider-text">
+                    Deep v you probably haven't heard of them banh mi synth
+                    actually affogato. Aesthetic lyft ethical drinking vinegar
+                    austint
+                  </p>
+                </div>
+              </div>
+              <div class="top__slider-item">
+                <img
+                  class="top__slider-img"
+                  src="images/content/slider-img-1.png"
+                  alt="images"
+                />
+                <div class="top__slider-info">
+                  <h2 class="top__slider-title">Furniture collection</h2>
+                  <p class="top__slider-text">
+                    Deep v you probably haven't heard of them banh mi synth
+                    actually affogato. Aesthetic lyft ethical drinking vinegar
+                    austint
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="new-collection">
+          <div class="container-fluid">
+            <h3 class="new-collection__title">Furniture new collection</h3>
+            <p class="new-collection__text">
+              Deep v you probably haven't heard of them banh mi synth actually
+              affogato. Aesthetic lyft ethical drinking vinegar austint
+            </p>
+            <div class="collection">
+              <a class="collection__item" href="#">
+                <img
+                  class="collection__images"
+                  src="images/content/c1.jpg"
+                  alt=""
+                />
+                <div class="collection__info">
+                  <h6 class="collection__info-title">
+                    Truffaut literally trust
+                  </h6>
+                  <p class="collection__info-text">
+                    Living room furntiture | Chair
+                  </p>
+                </div>
+              </a>
+              <a class="collection__item" href="#">
+                <img
+                  class="collection__images"
+                  src="images/content/c2.jpg"
+                  alt=""
+                />
+                <div class="collection__info">
+                  <h6 class="collection__info-title">
+                    Truffaut literally trust
+                  </h6>
+                  <p class="collection__info-text">
+                    Living room furntiture | Chair
+                  </p>
+                </div>
+              </a>
+              <a class="collection__item" href="#">
+                <img
+                  class="collection__images"
+                  src="images/content/c3.jpg"
+                  alt=""
+                />
+                <div class="collection__info">
+                  <h6 class="collection__info-title">
+                    Truffaut literally trust
+                  </h6>
+                  <p class="collection__info-text">
+                    Living room furntiture | Chair
+                  </p>
+                </div>
+              </a>
+              <a class="collection__item" href="#">
+                <img
+                  class="collection__images"
+                  src="images/content/c4.jpg"
+                  alt=""
+                />
+                <div class="collection__info">
+                  <h6 class="collection__info-title">
+                    Truffaut literally trust
+                  </h6>
+                  <p class="collection__info-text">
+                    Living room furntiture | Chair
+                  </p>
+                </div>
+              </a>
+              <a class="collection__item" href="#">
+                <img
+                  class="collection__images"
+                  src="images/content/c5.jpg"
+                  alt=""
+                />
+                <div class="collection__info">
+                  <h6 class="collection__info-title">
+                    Truffaut literally trust
+                  </h6>
+                  <p class="collection__info-text">
+                    Living room furntiture | Chair
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
 
-    <section class="reviews">
-      <div class="container">
-        <h3 class="reviews__title">Отзывы</h3>
-        <div class="reviews__slider">
-          <div class="reviews__item">
-            <p class="reviews__item-name">Михаил, 28 лет</p>
-            <p class="reviews__item-text">
-              Очень рад, что Вы есть! Пока еще бэху купить не могу, но
-              покататься взять - это отличная возможность! Такое ощущение, что у
-              меня личный огромный автопарк элитных тачек)))
+        <section class="decor">
+          <div class="container">
+            <h2 class="decor__title">
+              Aesthetic <br />
+              ethical drinking
+            </h2>
+            <p class="decor__text">
+              Deep v you probably haven't heard of them banh mi synth actually
+              affogato. Artlyft ethical the one drinking vinegar austint
             </p>
           </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Инна, 35 лет</p>
-            <p class="reviews__item-text">
-              Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на
-              Ваших машинах. Удобно, что расчет по минутам, это экономит бюджет
-              компании.
-            </p>
+        </section>
+
+        <section class="works-path">
+          <div class="container">
+            <h3 class="works-path__title">How it works</h3>
+            <div class="works-path__items">
+              <div class="works-path__items-box">
+                <div class="works-path__item works-path__item--consultation">
+                  <img
+                    class="works-path__item-img"
+                    src="images/graphic-tool.svg"
+                    alt="icon"
+                  />
+                  <h6 class="works-path__item-title">Designer Consultation</h6>
+                  <p class="works-path__item-text">
+                    Kinfolk scenester authentic craft beer truffaut irony
+                    intelligentsia YOLO lomo bushwick coloring book. Semiotics
+                    man bun venmo viral cliche
+                  </p>
+                </div>
+                <div class="works-path__item works-path__item--production">
+                  <img
+                    class="works-path__item-img"
+                    src="images/sofa.svg"
+                    alt="icon"
+                  />
+                  <h6 class="works-path__item-title">Production</h6>
+                  <p class="works-path__item-text">
+                    Everyday carry actually neutra authentic kogi shabby chic
+                  </p>
+                </div>
+              </div>
+
+              <div class="works-path__item works-path__item--measurements">
+                <img
+                  class="works-path__item-img"
+                  src="images/measuring-tape.svg"
+                  alt="icon"
+                />
+                <h6 class="works-path__item-title">Measurements</h6>
+                <p class="works-path__item-text">
+                  Intelligentsia YOLO lomo bushwick coloring book. Semiotics man
+                  bun venmo viral cliche
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Игорь, 25 лет</p>
-            <p class="reviews__item-text">
-              Ребята, Вы ТОПЧИК! Брал машину на свидание, покатал девушку, она в
-              восторге, я доволен, все счастливы)
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Марина, 30 лет</p>
-            <p class="reviews__item-text">
-              Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
-              машину поблизости. Всегда чистая, свежая, приятно садиться в нее.
-              До работы или на шопинг еду с комфортом.
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Григорий, 28 лет</p>
-            <p class="reviews__item-text">
-              Очень рад, что Вы есть! Пока еще бэху купить не могу, но
-              покататься взять - это отличная возможность! Такое ощущение, что у
-              меня личный огромный автопарк элитных тачек)))
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Иван, 35 лет</p>
-            <p class="reviews__item-text">
-              Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на
-              Ваших машинах. Удобно, что расчет по минутам, это экономит бюджет
-              компании.
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Глеб, 25 лет</p>
-            <p class="reviews__item-text">
-              Ребята, Вы ТОПЧИК! Брал машину на свидание, покатал девушку, она в
-              восторге, я доволен, все счастливы)
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Ирина, 30 лет</p>
-            <p class="reviews__item-text">
-              Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
-              машину поблизости. Всегда чистая, свежая, приятно садиться в нее.
-              До работы или на шопинг еду с комфортом.
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Григорий, 28 лет</p>
-            <p class="reviews__item-text">
-              Очень рад, что Вы есть! Пока еще бэху купить не могу, но
-              покататься взять - это отличная возможность! Такое ощущение, что у
-              меня личный огромный автопарк элитных тачек)))
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Иван, 35 лет</p>
-            <p class="reviews__item-text">
-              Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на
-              Ваших машинах. Удобно, что расчет по минутам, это экономит бюджет
-              компании.
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Глеб, 25 лет</p>
-            <p class="reviews__item-text">
-              Ребята, Вы ТОПЧИК! Брал машину на свидание, покатал девушку, она в
-              восторге, я доволен, все счастливы)
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Ирина, 30 лет</p>
-            <p class="reviews__item-text">
-              Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
-              машину поблизости. Всегда чистая, свежая, приятно садиться в нее.
-              До работы или на шопинг еду с комфортом.
-            </p>
+        </section>
+
+        <div class="gallery">
+          <div class="container-fluid">
+            <div class="gallery__buttons">
+              <button class="gallery__btn" data-filter=".bedroom">
+                Bedroom furniture
+              </button>
+              <button class="gallery__btn" data-filter=".living">
+                Living room furniture
+              </button>
+              <button class="gallery__btn" data-filter=".office">
+                Office furniture
+              </button>
+              <button class="gallery__btn" data-filter=".dining">
+                Dining room futniture
+              </button>
+              <button class="gallery__btn" data-filter=".chair">Chair</button>
+            </div>
+            <div class="gallery__inner">
+              <div class="gallery__items mix bedroom">
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/5.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/2.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/3.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/4.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/1.jpg" alt="images" />
+                </a>
+              </div>
+
+              <div class="gallery__items mix living">
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/5.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/2.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/3.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/4.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/1.jpg" alt="images" />
+                </a>
+              </div>
+
+              <div class="gallery__items mix office">
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/5.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/2.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/3.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/4.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/1.jpg" alt="images" />
+                </a>
+              </div>
+
+              <div class="gallery__items mix dining">
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/5.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/2.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/3.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/4.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/1.jpg" alt="images" />
+                </a>
+              </div>
+
+              <div class="gallery__items mix chair">
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/5.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/2.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/3.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/4.jpg" alt="images" />
+                </a>
+                <a class="gallery__item" href="#">
+                  <img src="images/gallery/1.jpg" alt="images" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="feedback">
-      <div class="container">
-        <div class="feedback__inner">
-          <img class="feedback__images" src="images/feedback-img.png" alt="" />
-          <form class="feedback__form">
-            <h3 class="feedback__title">Остались вопросы?</h3>
-            <p class="feedback__text">
-              Мы перезвоним Вам и проконсультируем по любому вопросу
-            </p>
-            <input class="feedback__input" type="text" placeholder="Имя" />
-            <input class="feedback__input" type="text" placeholder="Телефон" />
-            <button class="feedback__btn" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
-          </form>
+        <section class="blog-box">
+          <div class="container">
+            <h3 class="blog-box__title">More inspiration ideas in our blog</h3>
+            <div class="blog-box__items">
+              <div class="blog-box__item">
+                <a class="blog-box__img-link" href="#">
+                  <img class="blog-box__img" src="images/blog/1.jpg" alt="" />
+                </a>
+                <div class="blog-box__links">
+                  <span class="blog-box__date">March 12, 2020</span> | by
+                  <a class="blog-box__author" href="#">Ann Summers</a> |
+                  <a class="blog-box__theme" href="#">Inrerior </a>
+                </div>
+                <a class="blog-box__item-titlelink" href="#">
+                  <h4 class="blog-box__item-title">
+                    Listicle actually selvage activated charcoal for the
+                    drinking vinegar
+                  </h4>
+                </a>
+              </div>
+              <div class="blog-box__item">
+                <a class="blog-box__img-link" href="#">
+                  <img class="blog-box__img" src="images/blog/2.jpg" alt="" />
+                </a>
+                <div class="blog-box__links">
+                  <span class="blog-box__date">September 28,2020</span> | by
+                  <a class="blog-box__author" href="#">Finnagan Morningstar</a>
+                  |
+                  <a class="blog-box__theme" href="#">Dining room interior</a>
+                </div>
+                <a class="blog-box__item-titlelink" href="#">
+                  <h4 class="blog-box__item-title">
+                    Red selfies edison bulb four dollar toast humblebrag
+                  </h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <h6 class="footer__info-title">Contact Us</h6>
+                <p class="footer__info-text">
+                  Keffiyeh poutine etsy, paleo cray put a bird on it microdosing
+                  schlitz you probably occupy
+                </p>
+                <a class="info-email" href="mailto:ouremailaddress@email.com">
+                  ouremailaddress@email.com
+                </a>
+                <form class="footer__form" action="">
+                  <input
+                    class="footer__form-input"
+                    type="email"
+                    placeholder="Subscribe by email"
+                  />
+                  <button class="footer__form-button" type="submit">
+                    Send
+                  </button>
+                </form>
+              </div>
+              <ul class="footer__social">
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link--facebook"
+                    href="#"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link--instagram"
+                    href="#"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link--pinterest"
+                    href="#"
+                    >Pinterest</a
+                  >
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link--whatsapp"
+                    href="#"
+                    >WhatsApp</a
+                  >
+                </li>
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link footer__social-link--youtube"
+                    href="#"
+                    >Youtube</a
+                  >
+                </li>
+              </ul>
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Delivery</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">FAQ</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Help</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">More About Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-        <div id="vk_comments"></div>
-        <script type="text/javascript">
-          VK.Widgets.Comments("vk_comments", { limit: 20, attach: "*" });
-        </script>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__top">
-          <a href="" class="application-btn">Скачать приложение</a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">О НАС</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">АВТОПАРК</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">УСЛОВИЯ</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">КОНТАКТЫ</a>
-              </li>
-            </ul>
-          </nav>
-          <a class="phone" href="tel:380999999090">+38 (099) 999 90 90</a>
+        <div class="footer__copyright">
+          <div class="container">
+            <p>674 Gonzales Drive. Washington, PA 15301</p>
+          </div>
         </div>
-        <ul class="footer__social">
-          <li class="footer__social-item">
-            <a class="foooter__social-link" href=""
-              ><img class="footer__social-img" src="images/facebook.svg" alt=""
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a class="foooter__social-link" href=""
-              ><img
-                class="footer__social-img"
-                src="images/instagram.svg"
-                alt=""
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a class="foooter__social-link" href=""
-              ><img class="footer__social-img" src="images/youtube.svg" alt=""
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
