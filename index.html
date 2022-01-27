@@ -5,20 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
-    <script src="https://vk.com/js/api/openapi.js?169" type="text/javascript"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <script type="text/javascript">
+      VK?.init({apiId: 8063016, onlyWidgets: true});
+    </script>
   </head>
   <body>
+    <div id="vk_comments"></div>
     <script type="text/javascript">
-      VK.init({
-        apiId: ВАШ_API_ID,
-        onlyWidgets: true
-      });
-  </script>
-    
-  <div id="vk_comments"></div>
-  <script type="text/javascript">
-    VK.Widgets.Comments('vk_comments');
-  </script>
+      VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*"});
+    </script>
   </body>
 </html>
