@@ -264,6 +264,7 @@ button {
 .direction__item-subtitle {
   font-weight: 700;
   margin-bottom: 12px;
+  font-size: 18px;
 }
 
 .direction__list {
