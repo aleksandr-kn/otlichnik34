@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,419 +7,454 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      type="text/javascript"
-      src="https://vk.com/js/api/openapi.js?168"
-    ></script>
-    <script type="text/javascript">
-      VK?.init({ apiId: 8063016, onlyWidgets: true });
-    </script>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <a href="#" class="logo">
-            <img class="logo__link" src="images/logo.svg" alt="logo" />
+            <img class="logo__img" src="images/logo.svg" alt="logo" />
           </a>
-          <a class="phone" href="tel:88001112233">+8 (099) 999 90 90</a>
-          <button class="menu__btn"></button>
+          <nav class="menu">
+            <div class="menu__btn">
+              <span></span>
+            </div>
+            <ul class="menu__list">
+              <ul class="menu__list-item">
+                <a href="" class="menu__list-link">Product</a>
+              </ul>
+              <ul class="menu__list-item">
+                <a href="" class="menu__list-link">Customers</a>
+              </ul>
+              <ul class="menu__list-item">
+                <a href="" class="menu__list-link">Pricing</a>
+              </ul>
+              <ul class="menu__list-item">
+                <a href="" class="menu__list-link">Resources</a>
+              </ul>
+            </ul>
+          </nav>
+          <div class="user-nav">
+            <a class="user-nav__link" href="#">Sign In</a>
+            <a class="user-nav__link" href="#">Sign Up</a>
+          </div>
         </div>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">О НАС</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">АВТОПАРК</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">УСЛОВИЯ</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__list-link" href="#">КОНТАКТЫ</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <section class="top">
       <div class="container">
-        <div class="top__heading">
-          <div class="top__content">
-            <h1 class="top__title">
-              Мы поможем с любым заданием от простого к сложному
-            </h1>
-            <p class="top__text">
-              Я всегда в вашем смартфоне, заказывайте где удобно и когда удобно
-              - просто прислав файлы в whatsapp!
-            </p>
-            <a href="" class="application-btn">Перейти в Whatsapp</a>
-          </div>
-          <div class="top__slider">
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-            <div class="top__slider-item">
-              <img
-                class="top__slider-images"
-                src="images/slider-img.png"
-                alt=""
-              />
-              <p class="top__slider-text">
-                <span>4 грн/мин</span>
-                <span>5 мест</span>
-                <span>50 тыс. км пробег</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="top__bottom">
-          <div class="top__items">
-            <div class="top__item">
-              <img class="top__item-img" src="images/icon-1.svg" alt="" />
-              <p class="top__item-text">
-                Более 300 автомобилей в вашем распоряжении
-              </p>
-            </div>
-            <div class="top__item">
-              <img class="top__item-img" src="images/icon-2.svg" alt="" />
-              <p class="top__item-text">
-                Дешевле такси и собственного автомобиля
-              </p>
-            </div>
-            <div class="top__item">
-              <img class="top__item-img" src="images/icon-3.svg" alt="" />
-              <p class="top__item-text">
-                Лучшие автомобили в любой точке города
-              </p>
-            </div>
-          </div>
-          <div class="top__links">
-            <a class="top__link" href="">Условия аренды автомобиля</a>
-            <a class="top__link" href="">Публичный договор</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="rent">
-      <div class="container">
-        <div class="rent__inner">
-          <div class="rent__content">
-            <h3 class="rent__title">Условия аренды автомобиля</h3>
-            <p class="rent__text">
-              Мы ценим каждого клиента и предоставляем качественный сервис
-              каршеринга в Киеве.
-            </p>
-            <p class="rent__text">
-              Именно для того, что бы Вам было приятно и безопасно пользоваться
-              нашим сервисом на постоянной основе, мы выделили несколько условий
-              для того, чтобы взять машину в аренду
-            </p>
-            <a href="" class="application-btn">Скачать приложение</a>
-          </div>
-          <div class="rent__item">
-            <div class="rent__item-num">01</div>
-            <p class="rent__item-title">
-              Опыт вождения <br />
-              от 2х лет
-            </p>
-            <p class="rent__item-text">
-              Для того, чтобы арендовать автомобиль, Вам необходимо
-              зарегестрировать свои прав в нашем мобильном приложении
-            </p>
-          </div>
-          <div class="rent__item">
-            <div class="rent__item-num">02</div>
-            <p class="rent__item-title">Только по Киеву</p>
-            <p class="rent__item-text">
-              Наши автомобили работают только в пределах города Киев. За город
-              на наших автомобилях, к сожалению, выезжать нельзя.
-            </p>
-          </div>
-          <div class="rent__item">
-            <div class="rent__item-num">03</div>
-            <p class="rent__item-title">Мобильный телефон и интернет</p>
-            <p class="rent__item-text">
-              Для использования нашего сервиса Вам необходим мобильный телефон и
-              интернет. Бронирование, оплата и вся отчетность происходит онлайн
-            </p>
-          </div>
+        <div class="top__inner">
+          <h1 class="top__title title">The Design Thinking superpowers</h1>
+          <p class="top__text">
+            Tools, tutorials, design and innovation experts, all in one place!
+            The most intuitive way to imagine your next user experience.
+          </p>
+          <button class="top__btn">Get started</button>
+          <a href="#" class="top__link">Watch the Video</a>
         </div>
       </div>
     </section>
 
-    <section class="benefits">
-      <div class="container">
-        <h3 class="benefits__title">Преимущества</h3>
-        <div class="benefits__items">
-          <ul class="benefits__list">
-            <li class="benefits__list-item">мойка авто каждую неделю</li>
-            <li class="benefits__list-item">премиум автомобили</li>
-            <li class="benefits__list-item">мощный двигатель</li>
-            <li class="benefits__list-item">поддержка 24/7</li>
-            <li class="benefits__list-item">бензин за наш счет</li>
-            <li class="benefits__list-item">парковка по всему городу</li>
-            <li class="benefits__list-item">каждый месяц ТО автомобиля</li>
-          </ul>
-          <img class="benefits__images" src="images/benefits.png" alt="" />
-          <div class="benefits__content">
-            <p class="benefits__text">
-              Вы можете выбрать один из 300 наших автомобилей, насладиться
-              сервисом, повысить уровень жизни, не покупая дорогой автомобиль,
-              успевать везде и каждый день ездить на новом премиум автомобиле.
-            </p>
-            <p class="benefits__text">
-              Посмотрите видео презентацию нашего сервиса и выберите автомобиль
-              уже сейчас!
-            </p>
-            <a
-              class="video-popup"
-              data-fancybox
-              href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-            >
-              ПОСМОТРЕТЬ <br />
-              ПРЕЗЕНТАЦИЮ</a
-            >
+    <section class="tools">
+      <h3 class="tools__title title">
+        We design tools to unveil your superpowers
+      </h3>
+      <div class="tools__inner">
+        <div class="container">
+          <div class="tools__items">
+            <div class="tools__item">
+              <img
+                class="tools__item-img"
+                src="images/tools-1.svg"
+                alt="tools img"
+              />
+              <h5 class="tools__items-title title">First click tests</h5>
+              <p class="tools__items-text">
+                While most people enjoy casino gambling,
+              </p>
+            </div>
+            <div class="tools__item">
+              <img
+                class="tools__item-img"
+                src="images/tools-2.svg"
+                alt="tools img"
+              />
+              <h5 class="tools__items-title title">Design surveys</h5>
+              <p class="tools__items-text">
+                Sports betting, lottery and bingo playing for the fun
+              </p>
+            </div>
+            <div class="tools__item">
+              <img
+                class="tools__item-img"
+                src="images/tools-3.svg"
+                alt="tools img"
+              />
+              <h5 class="tools__items-title title">Preference tests</h5>
+              <p class="tools__items-text">
+                The Myspace page defines the individual.
+              </p>
+            </div>
+            <div class="tools__item">
+              <img
+                class="tools__item-img"
+                src="images/tools-4.svg"
+                alt="tools img"
+              />
+              <h5 class="tools__items-title title">Five second tests</h5>
+              <p class="tools__items-text">
+                Personal choices and the overall personality of the person.
+              </p>
+            </div>
           </div>
         </div>
+        <a class="tools__link" href="#">SIGN UP NOW</a>
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="direction">
       <div class="container">
-        <h3 class="reviews__title">Отзывы</h3>
-        <div class="reviews__slider">
-          <div class="reviews__item">
-            <p class="reviews__item-name">Михаил, 28 лет</p>
-            <p class="reviews__item-text">
-              Очень рад, что Вы есть! Пока еще бэху купить не могу, но
-              покататься взять - это отличная возможность! Такое ощущение, что у
-              меня личный огромный автопарк элитных тачек)))
+        <div class="direction__item">
+          <div class="direction__item-content">
+            <p class="direction__item-pretitle">Effortless Validation for</p>
+            <h3 class="direction__item-title title">Design Professionals</h3>
+            <p class="direction__item-text">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
+            </p>
+            <h6 class="direction__item-subtitle title">Accessory makers</h6>
+            <p class="direction__item-text">
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun
+            </p>
+            <h6 class="direction__item-subtitle title">Alterationists</h6>
+            <p class="direction__item-text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
+            </p>
+            <h6 class="direction__item-subtitle title">
+              Custom Design designers
+            </h6>
+            <p class="direction__item-text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
             </p>
           </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Инна, 35 лет</p>
-            <p class="reviews__item-text">
-              Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на
-              Ваших машинах. Удобно, что расчет по минутам, это экономит бюджет
-              компании.
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Игорь, 25 лет</p>
-            <p class="reviews__item-text">
-              Ребята, Вы ТОПЧИК! Брал машину на свидание, покатал девушку, она в
-              восторге, я доволен, все счастливы)
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Марина, 30 лет</p>
-            <p class="reviews__item-text">
-              Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
-              машину поблизости. Всегда чистая, свежая, приятно садиться в нее.
-              До работы или на шопинг еду с комфортом.
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Григорий, 28 лет</p>
-            <p class="reviews__item-text">
-              Очень рад, что Вы есть! Пока еще бэху купить не могу, но
-              покататься взять - это отличная возможность! Такое ощущение, что у
-              меня личный огромный автопарк элитных тачек)))
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Иван, 35 лет</p>
-            <p class="reviews__item-text">
-              Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на
-              Ваших машинах. Удобно, что расчет по минутам, это экономит бюджет
-              компании.
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Глеб, 25 лет</p>
-            <p class="reviews__item-text">
-              Ребята, Вы ТОПЧИК! Брал машину на свидание, покатал девушку, она в
-              восторге, я доволен, все счастливы)
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Ирина, 30 лет</p>
-            <p class="reviews__item-text">
-              Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
-              машину поблизости. Всегда чистая, свежая, приятно садиться в нее.
-              До работы или на шопинг еду с комфортом.
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Григорий, 28 лет</p>
-            <p class="reviews__item-text">
-              Очень рад, что Вы есть! Пока еще бэху купить не могу, но
-              покататься взять - это отличная возможность! Такое ощущение, что у
-              меня личный огромный автопарк элитных тачек)))
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Иван, 35 лет</p>
-            <p class="reviews__item-text">
-              Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на
-              Ваших машинах. Удобно, что расчет по минутам, это экономит бюджет
-              компании.
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Глеб, 25 лет</p>
-            <p class="reviews__item-text">
-              Ребята, Вы ТОПЧИК! Брал машину на свидание, покатал девушку, она в
-              восторге, я доволен, все счастливы)
-            </p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__item-name">Ирина, 30 лет</p>
-            <p class="reviews__item-text">
-              Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу
-              машину поблизости. Всегда чистая, свежая, приятно садиться в нее.
-              До работы или на шопинг еду с комфортом.
-            </p>
-          </div>
+          <img
+            class="direction__item-img"
+            src="images/direction-1.svg"
+            alt="Design Proffesional Images"
+          />
         </div>
-      </div>
-    </section>
 
-    <section class="feedback">
-      <div class="container">
-        <div class="feedback__inner">
-          <img class="feedback__images" src="images/feedback-img.png" alt="" />
-          <form class="feedback__form">
-            <h3 class="feedback__title">Остались вопросы?</h3>
-            <p class="feedback__text">
-              Мы перезвоним Вам и проконсультируем по любому вопросу
+        <div class="direction__item">
+          <img
+            class="direction__item-img"
+            src="images/direction-2.svg"
+            alt="Marketers Images"
+          />
+          <div class="direction__item-content">
+            <p class="direction__item-pretitle">Easier decision making for</p>
+            <h3 class="direction__item-title title">Product Managers</h3>
+            <p class="direction__item-text">
+              The Myspace page defines the individual, his or her
+              characteristics, traits, personal choices and the overall
+              personality of the person.
             </p>
-            <input class="feedback__input" type="text" placeholder="Имя" />
-            <input class="feedback__input" type="text" placeholder="Телефон" />
-            <button class="feedback__btn" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
-          </form>
-        </div>
-        <div id="vk_comments"></div>
-        <script type="text/javascript">
-          VK.Widgets.Comments("vk_comments", { limit: 20, attach: "*" });
-        </script>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__top">
-          <a href="" class="application-btn">Скачать приложение</a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">О НАС</a>
+            <ul class="direction__list">
+              <li class="direction__list-item">
+                Never worry about overpaying for your energy again.
               </li>
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">АВТОПАРК</a>
+              <li class="direction__list-item">
+                We will only switch you to energy companies that we trust and
+                will treat you right
               </li>
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">ОТЗЫВЫ</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">УСЛОВИЯ</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__list-link" href="#">КОНТАКТЫ</a>
+              <li class="direction__list-item">
+                We track the markets daily and know where the savings are.
               </li>
             </ul>
-          </nav>
-          <a class="phone" href="tel:380999999090">+38 (099) 999 90 90</a>
+          </div>
         </div>
-        <ul class="footer__social">
-          <li class="footer__social-item">
-            <a class="foooter__social-link" href=""
-              ><img class="footer__social-img" src="images/facebook.svg" alt=""
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a class="foooter__social-link" href=""
-              ><img
-                class="footer__social-img"
-                src="images/instagram.svg"
-                alt=""
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a class="foooter__social-link" href=""
-              ><img class="footer__social-img" src="images/youtube.svg" alt=""
-            /></a>
-          </li>
-        </ul>
+
+        <div class="direction__item">
+          <div class="direction__item-content">
+            <p class="direction__item-pretitle">Optimisation for</p>
+            <h3 class="direction__item-title title">Marketers</h3>
+            <p class="direction__item-text">
+              Few would argue that, despite the advancements of feminism over
+              the past three decades, women still face a double standard when it
+              comes to their behavior.
+            </p>
+            <h6 class="direction__item-subtitle title">Accessory makers</h6>
+            <p class="direction__item-text">
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun
+            </p>
+            <h6 class="direction__item-subtitle title">Alterationists</h6>
+            <p class="direction__item-text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
+            </p>
+            <h6 class="direction__item-subtitle title">
+              Custom Design designers
+            </h6>
+            <p class="direction__item-text">
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
+            </p>
+          </div>
+          <img
+            class="direction__item-img"
+            src="images/direction-3.svg"
+            alt="Marketers Images"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <div class="team__inner">
+          <div class="team__item team__item--1">
+            <img class="team__item-img" src="images/team-1.jpg" alt="name" />
+            <p class="team__item-text team__item-text--left">
+              I can help marketing strategy
+            </p>
+          </div>
+          <div class="team__item team__item--2">
+            <img class="team__item-img" src="images/team-2.jpg" alt="name" />
+            <p class="team__item-text team__item-text--right">
+              I can help marketing strategy
+            </p>
+          </div>
+          <div class="team__item team__item--3">
+            <img class="team__item-img" src="images/team-3.jpg" alt="name" />
+            <p class="team__item-text team__item-text--left">
+              I can help marketing strategy
+            </p>
+          </div>
+          <div class="team__item team__item--4">
+            <img class="team__item-img" src="images/team-4.jpg" alt="name" />
+            <p class="team__item-text team__item-text--left">
+              I can help marketing strategy
+            </p>
+          </div>
+          <div class="team__item team__item--5">
+            <img class="team__item-img" src="images/team-5.jpg" alt="name" />
+            <p class="team__item-text team__item-text--left">
+              I can help marketing strategy
+            </p>
+          </div>
+
+          <div class="team__box">
+            <h3 class="team__title title">Need a super hero?</h3>
+            <p class="team__text">
+              Do you require some help for your project: Conception workshop,
+              prototyping, marketing strategy, landing page, Ux/UI?
+            </p>
+            <button class="team__btn">Contact our expert</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <h3 class="blog__title title">Marketing Strategies</h3>
+        <p class="blog__text">
+          Join 40,000+ other marketers and get proven strategies on email
+          marketing
+        </p>
+        <div class="slider">
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="images/blog-1.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="# ">Abdullah</a> | 03
+              March 2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Increasing Prosperity With Positive Thinking
+            </a>
+          </div>
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="images/blog-2.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="# ">Abdullah</a> | 03
+              March 2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Motivation Is The First Step To Success
+            </a>
+          </div>
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="images/blog-3.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="# ">Abdullah</a> | 03
+              March 2019
+            </div>
+            <a href="#" class="slider__item-title title" href="#">
+              Success Steps For Your Personal Or Business Life
+            </a>
+          </div>
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="images/blog-1.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="# ">Abdullah</a> | 03
+              March 2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Increasing Prosperity With Positive Thinking
+            </a>
+          </div>
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="images/blog-2.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="# ">Abdullah</a> | 03
+              March 2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Motivation Is The First Step To Success
+            </a>
+          </div>
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="images/blog-3.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="# ">Abdullah</a> | 03
+              March 2019
+            </div>
+            <a href="#" class="slider__item-title title" href="#">
+              Success Steps For Your Personal Or Business Life
+            </a>
+          </div>
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="images/blog-1.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="# ">Abdullah</a> | 03
+              March 2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Increasing Prosperity With Positive Thinking
+            </a>
+          </div>
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="images/blog-2.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="# ">Abdullah</a> | 03
+              March 2019
+            </div>
+            <a class="slider__item-title title" href="#">
+              Motivation Is The First Step To Success
+            </a>
+          </div>
+          <div class="slider__item">
+            <img
+              class="slider__item-img"
+              src="images/blog-3.jpg"
+              alt="blog images"
+            />
+            <div class="slider__item-info">
+              By <a class="slider__item-author" href="# ">Abdullah</a> | 03
+              March 2019
+            </div>
+            <a href="#" class="slider__item-title title" href="#">
+              Success Steps For Your Personal Or Business Life
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="logo">
+            <img class="logo__img" src="images/logo.svg" alt="logo" />
+          </a>
+          <div class="footer__menu">
+            <h6 class="footer__menu-title title">Quick Links</h6>
+            <ul class="footer__list">
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link">About Us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link">Blog</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link">Contact</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <h6 class="footer__menu-title title">Legal Stuff</h6>
+            <ul class="footer__list">
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link">Disclaimer</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link">Financing</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link">Privacy Policy</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+          <form action="#" class="footer__form">
+            <p class="footer__form-text">
+              knowing you're always on the best energy deal.
+            </p>
+            <input
+              class="footer__form-input"
+              type="text"
+              placeholder="Enter your phone Number"
+            />
+            <button class="footer__form-btn" type="submit">Sign up Now</button>
+          </form>
+        </div>
       </div>
     </footer>
 
