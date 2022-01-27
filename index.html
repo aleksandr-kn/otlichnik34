@@ -14,13 +14,24 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://vk.com/js/api/openapi.js?168"
+    ></script>
+    <script type="text/javascript">
+      VK?.init({ apiId: 8063016, onlyWidgets: true });
+    </script>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <a href="#" class="logo">
-            <img class="logo__img" src="images/logo.svg" alt="logo" />
+          <a
+            style="text-decoration: none; font-size: 20px"
+            href="#"
+            class="logo"
+          >
+            Название / Слоган
           </a>
           <nav class="menu">
             <div class="menu__btn">
@@ -28,22 +39,24 @@
             </div>
             <ul class="menu__list">
               <ul class="menu__list-item">
-                <a href="" class="menu__list-link">Product</a>
+                <a href="" class="menu__list-link">Как заказать</a>
               </ul>
               <ul class="menu__list-item">
-                <a href="" class="menu__list-link">Customers</a>
+                <a href="" class="menu__list-link">Что могу </a>
               </ul>
               <ul class="menu__list-item">
-                <a href="" class="menu__list-link">Pricing</a>
+                <a href="" class="menu__list-link">Цены</a>
               </ul>
               <ul class="menu__list-item">
-                <a href="" class="menu__list-link">Resources</a>
+                <a href="" class="menu__list-link">Отзывы</a>
               </ul>
             </ul>
           </nav>
           <div class="user-nav">
-            <a class="user-nav__link" href="#">Sign In</a>
-            <a class="user-nav__link" href="#">Sign Up</a>
+            <a class="user-nav__link" href="#">Whatsapp</a>
+            <a style="background-color: #7360f2" class="user-nav__link" href="#"
+              >Viber</a
+            >
           </div>
         </div>
       </div>
@@ -51,21 +64,20 @@
     <section class="top">
       <div class="container">
         <div class="top__inner">
-          <h1 class="top__title title">The Design Thinking superpowers</h1>
+          <h1 class="top__title title">Помогаю с учебой!</h1>
           <p class="top__text">
-            Tools, tutorials, design and innovation experts, all in one place!
-            The most intuitive way to imagine your next user experience.
+            Мы поможем с любым заданием от простого заказа в одну формулу, или
+            если у вас будет заказ на написание большой работы примерно на 198
+            страниц - мы это тоже умеем!
           </p>
-          <button class="top__btn">Get started</button>
-          <a href="#" class="top__link">Watch the Video</a>
+          <button class="top__btn">Мой Whatsapp</button>
+          <a href="#" class="top__link">Телефон</a>
         </div>
       </div>
     </section>
 
     <section class="tools">
-      <h3 class="tools__title title">
-        We design tools to unveil your superpowers
-      </h3>
+      <h3 class="tools__title title">Почему заказывать у меня?</h3>
       <div class="tools__inner">
         <div class="container">
           <div class="tools__items">
@@ -75,7 +87,7 @@
                 src="images/tools-1.svg"
                 alt="tools img"
               />
-              <h5 class="tools__items-title title">First click tests</h5>
+              <h5 class="tools__items-title title">Качественно</h5>
               <p class="tools__items-text">
                 While most people enjoy casino gambling,
               </p>
@@ -86,20 +98,9 @@
                 src="images/tools-2.svg"
                 alt="tools img"
               />
-              <h5 class="tools__items-title title">Design surveys</h5>
+              <h5 class="tools__items-title title">Профессионально</h5>
               <p class="tools__items-text">
                 Sports betting, lottery and bingo playing for the fun
-              </p>
-            </div>
-            <div class="tools__item">
-              <img
-                class="tools__item-img"
-                src="images/tools-3.svg"
-                alt="tools img"
-              />
-              <h5 class="tools__items-title title">Preference tests</h5>
-              <p class="tools__items-text">
-                The Myspace page defines the individual.
               </p>
             </div>
             <div class="tools__item">
@@ -108,18 +109,31 @@
                 src="images/tools-4.svg"
                 alt="tools img"
               />
-              <h5 class="tools__items-title title">Five second tests</h5>
+              <h5 class="tools__items-title title">Быстро</h5>
+              <p class="tools__items-text">
+                The Myspace page defines the individual.
+              </p>
+            </div>
+            <div class="tools__item">
+              <img
+                class="tools__item-img"
+                src="images/tools-3.svg"
+                alt="tools img"
+              />
+              <h5 class="tools__items-title title">Еще причина</h5>
               <p class="tools__items-text">
                 Personal choices and the overall personality of the person.
               </p>
             </div>
           </div>
         </div>
-        <a class="tools__link" href="#">SIGN UP NOW</a>
+        <a style="background-color: #25d366" class="tools__link" href="#"
+          >Мой Whatsapp</a
+        >
       </div>
     </section>
 
-    <section class="direction">
+    <!-- <section class="direction">
       <div class="container">
         <div class="direction__item">
           <div class="direction__item-content">
@@ -218,7 +232,7 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="team">
       <div class="container">
@@ -267,7 +281,7 @@
     </section>
 
     <section class="blog">
-      <div class="container">
+      <!-- <div class="container">
         <h3 class="blog__title title">Marketing Strategies</h3>
         <p class="blog__text">
           Join 40,000+ other marketers and get proven strategies on email
@@ -401,6 +415,12 @@
             </a>
           </div>
         </div>
+      </div> -->
+      <div class="container">
+        <div id="vk_comments"></div>
+        <script type="text/javascript">
+          VK.Widgets.Comments("vk_comments", { limit: 20, attach: "*" });
+        </script>
       </div>
     </section>
     <footer class="footer">
