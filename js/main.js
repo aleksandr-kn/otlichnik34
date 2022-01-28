@@ -29,7 +29,7 @@ $(function () {
     slidesToScroll: 1,
     lazyLoad: "ondemand",
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 7000,
     responsive: [
       {
         breakpoint: 1141,
