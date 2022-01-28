@@ -50,6 +50,7 @@ button {
   text-decoration: none;
   font-size: 24px;
   font-weight: 700;
+  color: #544837;
 }
 .logo:visited {
   color: #544837;
@@ -110,6 +111,10 @@ button {
   line-height: 28px;
   font-weight: 400;
   text-decoration: none;
+  transition: all 0.325s;
+}
+.menu__list-link:hover {
+  color: #ff9900;
 }
 
 .user-nav {
@@ -947,6 +952,13 @@ button {
     padding-top: 15px;
   }
 
+  .user-nav__link {
+    padding: 11px 11px;
+  }
+  .user-nav__link--vk {
+    margin-left: 0;
+  }
+
   .menu__list-item + .menu__list-item {
     margin-left: 0;
   }
@@ -958,6 +970,15 @@ button {
 
   .top__btn {
     margin-bottom: 20px;
+  }
+
+  .top__link--vk {
+    margin-left: 0;
+  }
+
+  .top__link--email {
+    font-size: 25px;
+    margin-top: 25px;
   }
 
   .tools__item {
@@ -983,5 +1004,17 @@ button {
   .footer .logo {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  .footer__menu {
+    width: 100%;
+  }
+
+  .footer__menu + .footer__menu {
+    margin-top: 20px;
+  }
+
+  .footer__menu-title {
+    margin-bottom: 15px;
   }
 }
