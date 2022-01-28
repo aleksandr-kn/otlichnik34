@@ -105,14 +105,20 @@ button {
   line-height: 24px;
   text-decoration: none;
   padding: 11px 23px;
-  border: 1px solid #bcd0e5;
+  border: 1px solid #25d366;
   border-radius: 4px;
+  transition: all 0.325s;
 }
 
 .user-nav__link + .user-nav__link {
   margin-left: 14px;
   border-color: transparent;
   background-color: #ff9900;
+  color: #fff;
+}
+
+.user-nav__link--whatsapp:hover {
+  background-color: #25d366;
   color: #fff;
 }
 
@@ -140,6 +146,7 @@ button {
 }
 
 .top__btn {
+  font-size: 18px;
   display: inline-block;
   color: #fff;
   background-color: #25d366;
@@ -147,6 +154,16 @@ button {
   border: none;
   border-radius: 4px;
   margin-right: 30px;
+  text-decoration: none;
+  transition: all 0.325s;
+}
+
+.top__links {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .top__link {
@@ -155,9 +172,46 @@ button {
   color: #25d366;
   line-height: 24px;
   font-weight: 600;
-  padding-left: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
+  transition: all 0.325s;
 }
+
+.top__link--whatsapp {
+  border: 1px solid #25d366;
+}
+
+.top__link--whatsapp:hover {
+  background-color: #fff;
+  color: #173a56;
+}
+
+.top__link--email {
+  color: #2f281e;
+  font-size: 22px;
+  text-decoration: none;
+  margin-top: 35px;
+  padding-left: 0;
+}
+.top__link--email:hover {
+  color: #25d366;
+}
+
+.top__link--vk {
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.top__link--vk:hover {
+  background-color: rgba(0, 119, 255, 0.6);
+}
+
+.top__link-img {
+  max-width: 220px;
+  object-position: bottom center;
+  height: 53px;
+}
+
 /* .top__link::before {
   content: "";
   position: absolute;
@@ -216,7 +270,7 @@ button {
   font-size: 18px;
   text-align: center;
   color: #fff;
-  background-color: #ff9900;
+  background-color: #25d366;
   display: block;
   text-decoration: none;
   padding: 15px 32px 14px;
@@ -225,6 +279,16 @@ button {
   line-height: 24px;
   max-width: 220px;
   margin: 0 auto;
+  transition: all 0.325s;
+}
+
+.tools__link--whatsapp {
+  border: solid #25d366 1px;
+}
+
+.tools__link--whatsapp:hover {
+  background-color: transparent;
+  color: #544837;
 }
 
 .direction {
@@ -285,6 +349,61 @@ button {
   width: 35px;
   height: 35px;
   background-image: url("../images/check.png");
+}
+
+.reviews {
+  padding: 100px 0;
+  /* background-color: #332208 */
+  /* color: #fefefe;
+   */
+  color: #544837;
+
+  background-image: url("../images/team-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.reviews__title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 70px;
+}
+
+.slick-initialized .reviews__item {
+  display: flex;
+}
+
+.reviews__item {
+  border: 1px solid #c5ac2d;
+  text-align: center;
+  padding: 45px 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
+  min-height: 300px;
+  margin-right: 30px;
+}
+
+.reviews__item-name {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.reviews__slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+.reviews__slider .slick-dots button {
+  background-color: #c5ac2d;
+  margin: 0 5px;
+  line-height: 12px;
 }
 
 .team {
@@ -564,6 +683,9 @@ button {
 }
 
 @media (max-width: 1240px) {
+  .reviews {
+    padding: 75px 0;
+  }
   .team__item--4 {
     left: 275px;
   }
@@ -601,6 +723,9 @@ button {
 }
 
 @media (max-width: 1040px) {
+  .reviews {
+    padding: 50px 0;
+  }
   .team__item--2 {
     top: 190px;
   }
