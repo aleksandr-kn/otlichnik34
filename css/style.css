@@ -608,7 +608,7 @@ button {
   font-weight: 700;
   font-size: 34px;
   line-height: 51px;
-  margin-bottom: 9px;
+  margin-bottom: 70px;
 }
 
 .blog__text {
@@ -1000,6 +1000,11 @@ button {
   .blog__title {
     font-size: 26px;
     line-height: 30px;
+  }
+
+  .reviews__title,
+  .blog__title {
+    margin-bottom: 35px;
   }
 
   .footer__inner {
