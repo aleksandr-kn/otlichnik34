@@ -1005,6 +1005,10 @@ button {
     line-height: 30px;
   }
 
+  .reviews__item {
+    padding: 20px 10px;
+  }
+
   .reviews__title,
   .blog__title {
     margin-bottom: 35px;

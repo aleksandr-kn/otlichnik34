@@ -14,15 +14,84 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      type="text/javascript"
-      src="https://vk.com/js/api/openapi.js?168"
-    ></script>
-    <script type="text/javascript">
-      VK?.init({ apiId: 8063016, onlyWidgets: true });
-    </script>
   </head>
   <body>
+    <!-- Ассинхронная загрузка VK API -->
+    <div id="vk_api_transport"></div>
+    <script type="text/javascript">
+      window.vkAsyncInit = function () {
+        VK.init({
+          apiId: 8063016,
+          onlyWidgets: true,
+        });
+        //Блок комментариев
+        VK.Widgets.Comments("vk_comments", { limit: 20, attach: "*" });
+        //Отзывы
+        VK.Widgets.Post(
+          "vk_post_615789326_570",
+          615789326,
+          570,
+          "3mx2iRbEJI-2LgwzTeP-FZ6vvgco"
+        );
+
+        VK.Widgets.Post(
+          "vk_post_615789326_521",
+          615789326,
+          521,
+          "km57oqSHb981Zt1JlBQIvyWXZZ5G"
+        );
+
+        VK.Widgets.Post(
+          "vk_post_615789326_520",
+          615789326,
+          520,
+          "EfkG-rXogaNmvM1yJoH8R0oypoHM"
+        );
+
+        VK.Widgets.Post(
+          "vk_post_615789326_519",
+          615789326,
+          519,
+          "XoRTS26cmmpl3m4Y7LQVNeUuYUdD"
+        );
+
+        VK.Widgets.Post(
+          "vk_post_615789326_502",
+          615789326,
+          502,
+          "xKlXkZKzWRqsVttG_G_9fPU4yPXD"
+        );
+
+        VK.Widgets.Post(
+          "vk_post_615789326_496",
+          615789326,
+          496,
+          "Xqivn-E1vOZadYhjghZp6u-YXTNK"
+        );
+
+        VK.Widgets.Post(
+          "vk_post_615789326_493",
+          615789326,
+          493,
+          "EDypnJXSx7A4Mht30HcN338s2Swr"
+        );
+
+        VK.Widgets.Post(
+          "vk_post_615789326_369",
+          615789326,
+          369,
+          "E9ynJvyz7mCnyNBgz6XPB4oq2BhW"
+        );
+      };
+
+      setTimeout(function () {
+        var el = document.createElement("script");
+        el.type = "text/javascript";
+        el.src = "https://vk.com/js/api/openapi.js?169";
+        el.async = true;
+        document.getElementById("vk_api_transport").appendChild(el);
+      }, 0);
+    </script>
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -264,139 +333,27 @@
         <div class="reviews__slider">
           <div class="reviews__item">
             <div id="vk_post_615789326_570"></div>
-            <script
-              type="text/javascript"
-              src="https://vk.com/js/api/openapi.js?169"
-            ></script>
-            <script type="text/javascript">
-              (function () {
-                VK.Widgets.Post(
-                  "vk_post_615789326_570",
-                  615789326,
-                  570,
-                  "3mx2iRbEJI-2LgwzTeP-FZ6vvgco"
-                );
-              })();
-            </script>
           </div>
           <div class="reviews__item">
             <div id="vk_post_615789326_521"></div>
-            <script
-              type="text/javascript"
-              src="https://vk.com/js/api/openapi.js?169"
-            ></script>
-            <script type="text/javascript">
-              (function () {
-                VK.Widgets.Post(
-                  "vk_post_615789326_521",
-                  615789326,
-                  521,
-                  "km57oqSHb981Zt1JlBQIvyWXZZ5G"
-                );
-              })();
-            </script>
           </div>
           <div class="reviews__item">
             <div id="vk_post_615789326_520"></div>
-            <script
-              type="text/javascript"
-              src="https://vk.com/js/api/openapi.js?169"
-            ></script>
-            <script type="text/javascript">
-              (function () {
-                VK.Widgets.Post(
-                  "vk_post_615789326_520",
-                  615789326,
-                  520,
-                  "EfkG-rXogaNmvM1yJoH8R0oypoHM"
-                );
-              })();
-            </script>
           </div>
           <div class="reviews__item">
             <div id="vk_post_615789326_519"></div>
-            <script
-              type="text/javascript"
-              src="https://vk.com/js/api/openapi.js?169"
-            ></script>
-            <script type="text/javascript">
-              (function () {
-                VK.Widgets.Post(
-                  "vk_post_615789326_519",
-                  615789326,
-                  519,
-                  "XoRTS26cmmpl3m4Y7LQVNeUuYUdD"
-                );
-              })();
-            </script>
           </div>
           <div class="reviews__item">
             <div id="vk_post_615789326_502"></div>
-            <script
-              type="text/javascript"
-              src="https://vk.com/js/api/openapi.js?169"
-            ></script>
-            <script type="text/javascript">
-              (function () {
-                VK.Widgets.Post(
-                  "vk_post_615789326_502",
-                  615789326,
-                  502,
-                  "xKlXkZKzWRqsVttG_G_9fPU4yPXD"
-                );
-              })();
-            </script>
           </div>
           <div class="reviews__item">
             <div id="vk_post_615789326_496"></div>
-            <script
-              type="text/javascript"
-              src="https://vk.com/js/api/openapi.js?169"
-            ></script>
-            <script type="text/javascript">
-              (function () {
-                VK.Widgets.Post(
-                  "vk_post_615789326_496",
-                  615789326,
-                  496,
-                  "Xqivn-E1vOZadYhjghZp6u-YXTNK"
-                );
-              })();
-            </script>
           </div>
           <div class="reviews__item">
             <div id="vk_post_615789326_493"></div>
-            <script
-              type="text/javascript"
-              src="https://vk.com/js/api/openapi.js?169"
-            ></script>
-            <script type="text/javascript">
-              (function () {
-                VK.Widgets.Post(
-                  "vk_post_615789326_493",
-                  615789326,
-                  493,
-                  "EDypnJXSx7A4Mht30HcN338s2Swr"
-                );
-              })();
-            </script>
           </div>
           <div class="reviews__item">
             <div id="vk_post_615789326_369"></div>
-            <script
-              type="text/javascript"
-              src="https://vk.com/js/api/openapi.js?169"
-            ></script>
-            <script type="text/javascript">
-              (function () {
-                VK.Widgets.Post(
-                  "vk_post_615789326_369",
-                  615789326,
-                  369,
-                  "E9ynJvyz7mCnyNBgz6XPB4oq2BhW"
-                );
-              })();
-            </script>
           </div>
           <!-- <div class="reviews__item">
             <div id="vk_post_615789326_366"></div>
@@ -636,9 +593,6 @@
       <div class="container">
         <h3 class="blog__title title">Комментарии</h3>
         <div id="vk_comments"></div>
-        <script type="text/javascript">
-          VK.Widgets.Comments("vk_comments", { limit: 20, attach: "*" });
-        </script>
       </div>
     </section>
     <footer class="footer">
