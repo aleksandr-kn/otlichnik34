@@ -29,6 +29,7 @@ $(function () {
     slidesToScroll: 1,
     lazyLoad: "ondemand",
     autoplay: true,
+    infinite: false,
     autoplaySpeed: 10000,
     responsive: [
       {
