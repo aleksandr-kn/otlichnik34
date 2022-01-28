@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -14,6 +18,13 @@ body {
   max-width: 1124px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.container-reviews {
+  max-width: 1220px;
+  padding: 0px 10px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .title {
@@ -33,6 +44,15 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 78px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+.logo:visited {
+  color: #544837;
 }
 
 .menu {
@@ -95,6 +115,9 @@ button {
 .user-nav {
   margin-left: 52px;
   margin-right: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .user-nav__link {
@@ -105,16 +128,32 @@ button {
   line-height: 24px;
   text-decoration: none;
   padding: 11px 23px;
-  border: 1px solid #25d366;
   border-radius: 4px;
   transition: all 0.325s;
 }
 
 .user-nav__link + .user-nav__link {
   margin-left: 14px;
-  border-color: transparent;
-  background-color: #ff9900;
-  color: #fff;
+}
+
+.user-nav__link-img {
+  margin: auto;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 130px;
+  height: 30px;
+}
+
+.user-nav__link--vk {
+  padding: 8px 23px;
+  border: 1px solid #fff;
+}
+.user-nav__link--vk:hover {
+  border: 1px solid rgba(0, 119, 255, 0.7);
+}
+
+.user-nav__link--whatsapp {
+  border: 1px solid #25d366;
 }
 
 .user-nav__link--whatsapp:hover {
@@ -189,9 +228,9 @@ button {
 
 .top__link--email {
   color: #2f281e;
-  font-size: 22px;
+  font-size: 28px;
   text-decoration: none;
-  margin-top: 35px;
+  margin-top: 44px;
   padding-left: 0;
 }
 .top__link--email:hover {
@@ -210,6 +249,7 @@ button {
   max-width: 220px;
   object-position: bottom center;
   height: 53px;
+  vertical-align: middle;
 }
 
 /* .top__link::before {
@@ -327,7 +367,7 @@ button {
 
 .direction__item-subtitle {
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-size: 18px;
 }
 
@@ -336,8 +376,10 @@ button {
 }
 
 .direction__list-item {
+  font-weight: 700;
+  font-size: 22px;
   margin-top: 30px;
-  padding-left: 65px;
+  padding-left: 55px;
   position: relative;
 }
 
@@ -345,7 +387,7 @@ button {
   content: "";
   position: absolute;
   left: 0;
-  top: 9px;
+  top: -3px;
   width: 35px;
   height: 35px;
   background-image: url("../images/check.png");
@@ -366,10 +408,11 @@ button {
 
 .reviews__title {
   font-family: "Fira Sans", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
   margin-bottom: 70px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
 }
 
 .slick-initialized .reviews__item {
@@ -377,7 +420,9 @@ button {
 }
 
 .reviews__item {
-  border: 1px solid #c5ac2d;
+  border: 1px solid #bcd0e5;
+  border-radius: 26.5px;
+  background-color: #fff;
   text-align: center;
   padding: 45px 30px;
   flex-direction: column;
@@ -394,6 +439,13 @@ button {
   line-height: 29px;
 }
 
+.reviews__item-text {
+  font-weight: 400;
+  color: #1b1818;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .reviews__slider .slick-dots {
   display: flex;
   justify-content: center;
@@ -401,7 +453,7 @@ button {
   margin-top: 35px;
 }
 .reviews__slider .slick-dots button {
-  background-color: #c5ac2d;
+  background-color: #fddec8;
   margin: 0 5px;
   line-height: 12px;
 }
@@ -645,6 +697,10 @@ button {
   font-size: 16px;
   line-height: 35px;
   color: #544837;
+  transition: all 0.325s;
+}
+.footer__menu-link:hover {
+  color: #ff9900;
 }
 
 .footer__form {

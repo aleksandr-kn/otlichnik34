@@ -26,7 +26,7 @@ $(function () {
     arrows: false,
     dots: true,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     responsive: [
       {
         breakpoint: 1141,
@@ -47,7 +47,7 @@ $(function () {
         },
       },
     ],
-  }); 
+  });
 
   $(".menu__btn").on("click", function () {
     $(".menu__list").toggleClass("menu__list--active");
