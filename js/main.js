@@ -25,14 +25,14 @@ $(function () {
   $(".reviews__slider").slick({
     arrows: false,
     dots: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    variableWidth: true,
+    lazyLoad: "ondemand",
     responsive: [
       {
         breakpoint: 1141,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
       {
@@ -44,6 +44,7 @@ $(function () {
       {
         breakpoint: 586,
         settings: {
+          variableWidth: true,
           slidesToShow: 1,
           centerMode: true,
         },
