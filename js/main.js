@@ -1,33 +1,33 @@
 $(function () {
-  $(".slider").slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    arrows: false,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 1140,
-        settings: {
-          slidesToShow: 2,
-          slidersToScroll: 2,
-        },
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 1,
-          slidersToScroll: 1,
-        },
-      },
-    ],
-  });
+  // $(".slider").slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 3,
+  //   arrows: false,
+  //   dots: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1140,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidersToScroll: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 769,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidersToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // });
 
   $(".reviews__slider").slick({
     arrows: false,
     dots: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 1141,
@@ -45,6 +45,7 @@ $(function () {
         breakpoint: 586,
         settings: {
           slidesToShow: 1,
+          centerMode: true,
         },
       },
     ],
