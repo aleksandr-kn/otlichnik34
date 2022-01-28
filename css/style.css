@@ -155,13 +155,15 @@ button {
 }
 .user-nav__link--vk:hover {
   border: 1px solid rgba(0, 119, 255, 0.7);
+  background: rgba(188, 208, 229, 0.125);
 }
 
 .user-nav__link--whatsapp {
-  border: 1px solid #25d366;
+  border: 1px solid #bcd0e5;
 }
 
 .user-nav__link--whatsapp:hover {
+  border: 1px solid #25d366;
   background-color: #25d366;
   color: #fff;
 }
